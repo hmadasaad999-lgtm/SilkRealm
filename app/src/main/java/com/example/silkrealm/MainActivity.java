@@ -56,6 +56,7 @@ public class MainActivity extends Activity {
             if(xp>=100){xp-=100;level++;maxHp+=15;hp=maxHp;}
             invalidate();}
       } else if(e.getAction()==MotionEvent.ACTION_UP){joy=false;}
+      }
       return true;
     }
     class Enemy{float x,y;boolean alive=true;Enemy(float a,float b){x=a;y=b;}}
